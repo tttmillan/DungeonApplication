@@ -8,137 +8,358 @@ namespace DungeonLibrary
 {
     public class Music
     {
-        static void Main(string[] args)
+        public static void IntroMusic()
         {
-            Console.Beep(587, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(587, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(659, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(659, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(587, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(587, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(587, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(587, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(659, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(659, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(784, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1318, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1318, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1568, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1480, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1318, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1174, 150);
-            Console.Beep(880, 150);
-            Console.Beep(1174, 150);
+            //sweet child of mine
+
+            //Console.Beep(587, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(587, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(659, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(659, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(587, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(587, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(587, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(587, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(659, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(659, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(784, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1318, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1318, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1568, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1480, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1318, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1174, 200);
+            //Console.Beep(880, 200);
+            //Console.Beep(1174, 200);
+
+
+
+            //            Function Play-SweetChildOMine {
+            //        #First Stanza
+            //        [System.Console]::Beep(587.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(587.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(659.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(659.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(587.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(587.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+            //        # Second Stanza
+            //        [System.Console]::Beep(587.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(587.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(659.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(659.3,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(784,200)
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(1318.5,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1318.5,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+
+
+            //        [System.Console]::Beep(1568,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1480,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1318.5,200)
+            //        [System.Console]::Beep(880,200)
+            //        [System.Console]::Beep(1174.7,200)
+            //        [System.Console]::Beep(880,200)
+
+            //        # Verse
+            //        [System.Console]::Beep(1174.7,1000)
+            //}
+
+
+            //Take me on
+
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(293, 200);
+            Console.Beep(246, 200);
+            Console.Beep(329, 200);
+            Console.Beep(329, 200);
+            Console.Beep(329, 200);
+            Console.Beep(415, 200);
+            Console.Beep(415, 200);
+            Console.Beep(440, 200);
+            Console.Beep(493, 200);
+            Console.Beep(440, 200);
+            Console.Beep(440, 200);
+            Console.Beep(440, 200);
+            Console.Beep(329, 200);
+            Console.Beep(293, 200);
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(329, 200);
+            Console.Beep(329, 200);
+            Console.Beep(369, 200);
+            Console.Beep(329, 200);
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(293, 200);
+            Console.Beep(246, 200);
+            Console.Beep(329, 200);
+            Console.Beep(329, 200);
+            Console.Beep(329, 200);
+            Console.Beep(415, 200);
+            Console.Beep(415, 200);
+            Console.Beep(440, 200);
+            Console.Beep(493, 200);
+            Console.Beep(440, 200);
+            Console.Beep(440, 200);
+            Console.Beep(440, 200);
+            Console.Beep(329, 200);
+            Console.Beep(293, 200);
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(369, 200);
+            Console.Beep(329, 200);
+            Console.Beep(329, 200);
+            Console.Beep(369, 200);
+            Console.Beep(329, 200);
         }
     }//end class
 

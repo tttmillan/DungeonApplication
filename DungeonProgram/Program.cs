@@ -7,112 +7,52 @@ using DungeonLibrary;
 using BadGuysLibrary;
 using Type = DungeonLibrary.Type;
 
+
 namespace DungeonProgram
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Music.IntroMusic();
 
+            Console.Title = "The 80's";
 
-            Console.Beep(587, 100);
-            Console.Beep(1174, 100);
-            Console.Beep(880, 100);
-            Console.Beep(784, 100);
-            Console.Beep(1568, 100);
-            Console.Beep(880, 100);
-            Console.Beep(1480, 100);
-            Console.Beep(880, 100);
-            Console.Beep(587, 100);
-            Console.Beep(1174, 100);
-            Console.Beep(880, 100);
-            Console.Beep(784, 100);
-            Console.Beep(1568, 100);
-            Console.Beep(880, 100);
-            Console.Beep(1480, 100);
-            Console.Beep(880, 100);
-            Console.Beep(587, 100);
-            Console.Beep(1174, 100);
-            Console.Beep(880, 100);
-            Console.Beep(784, 100);
-            Console.Beep(1568, 100);
-            Console.Beep(880, 100);
-            Console.Beep(1480, 100);
-            Console.Beep(880, 100);
-
-
-
-            Console.Title = "Detention in a Library";
-
-
-            Console.WriteLine("The 80's\n");
+            Console.WriteLine("\nYou have Detention in the Library\n\nGood luck!\n\n");
 
             int score = 0;
 
-            //TODO 1. Create a weapon for player
-
-            Weapon wp1 = new Weapon(6, "Black Sunglasses", 1, false, 3);
-            Weapon wp2 = new Weapon(20, "Colt Peacemaker", 10, false, 10);
-            Weapon wp3 = new Weapon(20, "Blaster Pistol", 16, true, 10);
-            Weapon wp4 = new Weapon(10, "Birthday Cake", 4, true, 5);
-            Weapon wp5 = new Weapon(6, "BeatBox", 18, true, 3);
-            Weapon wp6 = new Weapon(12, "Karate", 14, true, 6);
-            Weapon wp7 = new Weapon(8, "Pink Dress", 2, false, 4);
-            Weapon wp8 = new Weapon(2, "Bologna Sandwich", 1, false, 1);
-            Weapon wp9 = new Weapon(4, "Watermelon", 2, true, 2);
-            Weapon wp10 = new Weapon(16, "Toon Revolver", 6, true, 8);
-            Weapon wp11 = new Weapon(4, "G-1 Flight Jacket", 12, false, 2);
-
-            Weapon[] reaps = {wp1, wp2, wp3, wp4, wp5, wp6, wp7, wp8, wp9, wp10, wp11};
-
-            Random rando = new Random();
-            int randomWpn = rando.Next(reaps.Length);
-            Weapon reap = reaps[randomWpn];
+            Weapon reap = Weapon.StartWeapon();
 
 
             //TODO 2. Create a player
 
+            Console.WriteLine("What would you like your name to be?");
+            string name = Console.ReadLine();
 
+            Console.WriteLine(MenuSelection.PlayerTypeString(name));
 
-            Player player = new Player("You", 100, 0, 90, 100, Type.MartyMcFly, reap);
-         
-            //TODO 3. Add customization based on player race
+            ConsoleKey userType = Console.ReadKey(true).Key;
 
-            //TODO 4. Create a loop for the Room
+            Console.Clear();
+
+            DungeonLibrary.Type typeCh = new DungeonLibrary.Type();
+
+            typeCh = Player.PlayerType(userType);
+
+            Player player = new Player(name, 100, 0, 90, 100, typeCh, reap);                 
 
             bool exit = false;
 
             do
             {
-                //TODO 5. Get a room description from a method that generates
-
+       
                 Console.WriteLine(GetRoom());
-
-                //TODO 6. Create a monster in the room for the player
-
-                Guys bg1 = new Guys();
-                Guys bg2 = new Guys("Chucky", 40, 50, 40, 20, 1, 10, "Possessed Good Guy Doll", false);
-                Guys bg3 = new Guys("Predator", 70, 80, 70, 35, 1, 20, "Space Explorer", true);
-                Guys bg4 = new Guys("Hans Gruber", 20, 30, 15, 15, 1, 5, "German Terrorist", true);
-                Guys bg5 = new Guys("Jason Voorhes", 60, 70, 60, 30, 1, 20, "Camp Cook", false);
-                Guys bg6 = new Guys("Freddy Krueger", 60, 70, 60, 30, 1, 20, "Spirit of a Serial Killer", false);
-                Guys bg7 = new Guys("Lo Pan", 50, 60, 50, 25, 1, 18, "Oriental Sorcerer", true);
-                Guys bg8 = new Guys("The Fratellis", 30, 40, 30, 15, 1, 10, "The outlaw family of the Boondocks", true);
-                Guys bg9 = new Guys("Darth Vader", 80, 100, 80, 40, 1, 25, "Cyborg chief enforcer of the Galactic Empire", false);
-               
-                //Store them in a collection
-
-                Guys[] badGuys = { bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9 };
-
-                //randomly selecting a monster for the room
-
-                Random rand = new Random();
-                int randomNbr = rand.Next(badGuys.Length);
-                Guys badGuy = badGuys[randomNbr];
+                             
+                Guys badGuy = Guys.getEnemy();
 
                 Console.WriteLine("\nIn this room: \n\n" + badGuy.Name);
-
-                //TODO 7. Create a loop for the user choice menu
+                          
                 bool reload = false;
 
                 do
@@ -176,11 +116,12 @@ namespace DungeonProgram
                             break;
 
                     }
+                    Console.ResetColor();
 
                     //TODO 16. Check the players life
                     if (player.Life <= 0)
                     {
-                        Console.WriteLine("\nYou are Awesome!\n Psych Dude you Died!");
+                        Console.WriteLine("\nYou are Awesome!\n\n Psych Dude you Died!\n");
                         exit = true;
                     }
 
@@ -192,7 +133,15 @@ namespace DungeonProgram
             //}while(exit == false)     
 
             //TODO 17. Show Player how many monsters they defeated
-            Console.WriteLine("You defeated " + score + "\n 80's BadGuys" + (score == 1 ? "." : "s."));
+            Console.WriteLine("\nYou defeated\n " + score + "\n 80's Bad Guy" + (score == 1 ? "." : "s.") + "\n");
+
+            if (score >= 5)
+            {
+                Console.WriteLine("\nYou made it out of Detention! \nKey The Music!!!\n" +
+                    "\nDon't you forget about me\n" +
+                    "\nDon't Don't Don't Don't\n" +
+                    "\nDon't you forget about me!\n");
+            }
 
 
         }//end Main()

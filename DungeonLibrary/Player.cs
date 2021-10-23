@@ -74,6 +74,62 @@ namespace DungeonLibrary
 
         }
 
+        public static Type PlayerType(ConsoleKey userType)
+        {
+            DungeonLibrary.Type typeCh = new DungeonLibrary.Type();
+            switch (userType)
+            {
+                case ConsoleKey.A:
+                    Console.WriteLine("\nWait a minute doc. Wait a minute Doc,\n are you telling me you built a time machine out of a DeLorean?\n");
+                    typeCh = Type.MartyMcFly;
+                    break;
+                case ConsoleKey.B:
+                    Console.WriteLine("\nYou like me because I'm a scoundrel.\n There aren't enough scoundrels in your life\n");
+                    typeCh = Type.HanSolo;
+                    break;
+                case ConsoleKey.C:
+                    Console.WriteLine("\nLife moves pretty fast. If you don't stop and look around once in a while,\n you could miss it.\n");
+                    typeCh = Type.FerriusBueller;
+                    break;
+                case ConsoleKey.D:
+                    Console.WriteLine("\nI can't believe my Grandmother actually felt me up.\n");
+                    typeCh = Type.SamanthaBarker;
+                    break;
+                case ConsoleKey.E:
+                    Console.WriteLine("\nYou must chill. You must chill. Wigging out has never accomplished anything,\n plus it's really obnoxious. Don't be a spaz. Breathe deep, stay calm, ...\n");
+                    typeCh = Type.LloydDobler;
+                    break;
+                case ConsoleKey.F:
+                    Console.WriteLine("\nBanzai!\n");
+                    typeCh = Type.DanielLaRusso;
+                    break;
+                case ConsoleKey.G:
+                    Console.WriteLine("\nIf somebody doesn't believe in me, I can't believe in them.\n");
+                    typeCh = Type.AndieWalsh;
+                    break;
+                case ConsoleKey.H:
+                    Console.WriteLine("\nWould you rather I slipped her in the night deposit box\n at the funeral home?\n");
+                    typeCh = Type.ClarkGriswold;
+                    break;
+                case ConsoleKey.I:
+                    Console.WriteLine("\nI carried a watermelon.\n");
+                    typeCh = Type.Baby;
+                    break;
+                case ConsoleKey.J:
+                    Console.WriteLine("\nP-p-please, Eddie! Don't throw me out.\n Don't you realize you're making a big mistake?\n I didn't kill anybody. I swear!");
+                    typeCh = Type.RogerRabbit;
+                    break;
+                case ConsoleKey.K:
+                    Console.WriteLine("\nI feel the need....\n....The need for Speed!\n");
+                    typeCh = Type.Maverick;
+                    break;
+                default:
+                    Console.WriteLine("\nYou choose a wrong action, For Sure.\n Don't be a Dweeb and take it To The Max.....\n");
+                    break;
+            }
+            return typeCh;
+        }
+
 
         //Methods
 

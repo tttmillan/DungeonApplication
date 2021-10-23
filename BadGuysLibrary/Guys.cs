@@ -57,14 +57,26 @@ namespace BadGuysLibrary
             return calculatedBlock;
         }
 
+        public static Guys getEnemy()
+        {
+            Guys bg1 = new Guys();
+            Guys bg2 = new Guys("Chucky", 40, 50, 40, 20, 1, 10, "Possessed Good Guy Doll", false);
+            Guys bg3 = new Guys("Predator", 70, 80, 70, 35, 1, 20, "Space Explorer", true);
+            Guys bg4 = new Guys("Hans Gruber", 20, 30, 15, 15, 1, 5, "German Terrorist", true);
+            Guys bg5 = new Guys("Jason Voorhes", 60, 70, 60, 30, 1, 20, "Camp Cook", false);
+            Guys bg6 = new Guys("Freddy Krueger", 60, 70, 60, 30, 1, 20, "Spirit of a Serial Killer", false);
+            Guys bg7 = new Guys("Lo Pan", 50, 60, 50, 25, 1, 18, "Oriental Sorcerer", true);
+            Guys bg8 = new Guys("The Fratellis", 30, 40, 30, 15, 1, 10, "The outlaw family of the Boondocks", true);
+            Guys bg9 = new Guys("Darth Vader", 80, 100, 80, 40, 1, 25, "Cyborg chief enforcer of the Galactic Empire", true);
+            
+            Guys[] badGuys = { bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9 };
+                      
+            Random rand = new Random();
+            int randomNbr = rand.Next(badGuys.Length);
+            Guys badGuy = badGuys[randomNbr];
 
-
-
-
-
-
-
-
+            return badGuy;
+        }
     }//end class
 
 }//end namespace

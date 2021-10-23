@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EquippedWeapon.cs" />
     <Compile Include="Guys.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
